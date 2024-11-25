@@ -55,6 +55,8 @@
     .service-menu-area ul li a h5{
         margin-bottom: .375rem;
     }
+
+    
 }
 
 @media(max-width:991px){ 
@@ -139,4 +141,17 @@
     .footer_wrapper > div{
         padding: 0 1.875rem;
     }
+    .team_wrapper .card {
+        margin-bottom: 1rem; 
+    }
+    .team_wrapper .team-info {
+        padding: 1rem; 
+    }
+    .team_wrapper .team-info .social-network li a {
+        width: 1.5rem; 
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+
 }

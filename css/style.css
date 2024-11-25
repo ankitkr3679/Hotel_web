@@ -368,7 +368,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3.125rem;
-    position: relative;
+    position: relative;   
 }
 .counter::before{
     position: absolute;
@@ -389,7 +389,7 @@ p{
 }
 
 /* team */
-.team_wrapper .card{
+/* .team_wrapper .card{
     position: relative;
     overflow: hidden;
 }
@@ -430,7 +430,80 @@ p{
     font-size: .9375rem;
     color: var(--text-white);
     border: .0625rem solid var(--bg-white);
+} */
+
+.team_wrapper .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
+
+/* Hover Effect for Card */
+.team_wrapper .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transform: translateY(-5px); /* Lift the card slightly */
+}
+
+/* Team Info Section */
+.team_wrapper .team-info {
+    background-color: var(--secondary-color);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 1.25rem;
+    margin-bottom: -4.6875rem; /* Initially hidden below */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show Team Info on Hover */
+.team_wrapper .card:hover .team-info {
+    margin-bottom: 0; /* Slide up the info */
+}
+
+/* Text Styling */
+.team_wrapper .team-info h5,
+.team_wrapper .team-info p {
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* Social Network Container */
+.team_wrapper .team-info .social-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    margin: 1.25rem -1.25rem -1.25rem;
+    background-color: var(--Primary-color);
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    gap: 10px; /* Added spacing between icons */
+}
+
+/* Social Icons */
+.team_wrapper .team-info .social-network li a {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: block;
+    border-radius: 50%;
+    font-size: 0.9375rem;
+    color: var(--text-white);
+    border: 0.0625rem solid var(--bg-white);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Social Icons */
+.team_wrapper .team-info .social-network li a:hover {
+    background-color: var(--bg-white); /* White background on hover */
+    color: var(--Primary-color); /* Primary color for icon */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
 
 /* gallery */
 .gallery_wrapper .gallery-item{
@@ -438,7 +511,7 @@ p{
     overflow: hidden;
     position: relative;
 }
-.gallery_wrapper .gallery-item:before,
+/* .gallery_wrapper .gallery-item:before,
 .gallery_wrapper .gallery-item:after,
 .gallery_wrapper .gallery-item-content:before,
 .gallery_wrapper .gallery-item-content:after{
@@ -495,7 +568,7 @@ p{
 .gallery_wrapper .gallery-item:hover .gallery-item-content:after{
     opacity: 1;
     left: 0;
-}
+} */
 
 /* price */
 .price_wrapper .card{
@@ -510,17 +583,18 @@ p{
 .price_wrapper .card:hover h3,
 .price_wrapper .card:hover h5,
 .price_wrapper .card:hover p{
-    color: var(--text-white);
+    color: var(--text-black);
 }
 .price_wrapper .card:hover .main-btn{
-    color: var(--text-white);
-    border-color: var(--bg-white);
+    color: var(--text-black);
+    border-color: var(--primary-text);
 }
 
 /* Blog */
 .blog_wrapper .blog-content{
     margin: -5rem 0 0 4.375rem;
     box-shadow: 0.125rem .25rem rgb(34 30 31 / 40%);
+    border-radius: 5px;
 }
 .our-partner-slider{
     background-color: var(--bg-color);

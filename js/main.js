@@ -31,27 +31,49 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-// counter 
-document.addEventListener("DOMContentLoaded", () => {
-    function counter(id, start, end, duration) {
-        let obj = document.getElementById(id),
-        current = start,
-        range = end - start,
-        increment = end > start ? 1 : -1,
-        step = Math.abs(Math.floor(duration / range)),
-        timer = setInterval(() => {
-            current += increment;
-            obj.textContent = current;
-            if(current == end){
-                clearInterval(timer);
-            }
-        }, step);
+// counter
+document.addEventListener("DOMContentLoaded", function () {
+    
+    function animateCounter(id, start, end, duration) {
+      let current = start;
+      const increment = (end - start) / (duration / 50);
+      const element = document.getElementById(id);
+  
+      if (element) {
+        const interval = setInterval(() => {
+          current += increment;
+          if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+            current = end;
+            clearInterval(interval);
+          }
+          element.innerText = Math.floor(current);
+        }, 50);
+      }
     }
-    counter("count1", 0 , 8587, 3000);
-    counter("count2", 100 , 8986, 2500);
-    counter("count3", 0 , 9587, 3000);
-    counter("count4", 0 , 9810, 3000);
+  
+    // Observer to detect when counter section comes into view
+    const observer = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+        
+            animateCounter("count1", 0, 45, 2000); 
+            animateCounter("count2", 0, 65, 2000); 
+            animateCounter("count3", 0, 85, 2000); 
+            animateCounter("count4", 0, 95, 2000); 
+            observer.disconnect(); 
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+  
+    const counterSection = document.querySelector(".counter");
+    if (counterSection) {
+      observer.observe(counterSection);
+    }
 });
+  
 
 // Our partner
 var swiper = new Swiper(".our-partner", {

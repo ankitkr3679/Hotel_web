@@ -367,7 +367,7 @@ p{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3.125rem;
+    /* padding: 3.125rem; */
     position: relative;   
 }
 .counter::before{
@@ -387,6 +387,10 @@ p{
     z-index: 3;
     color: var(--text-white);
 }
+.counter .col-md-3{
+    flex: 1;
+    padding-top: 2rem;  
+  }
 
 /* team */
 .team_wrapper .card {

@@ -152,6 +152,12 @@
         height: 1.5rem;
         line-height: 1.5rem;
     }
+    
+    .counter .col-md-3{
+       padding: 0;
+       padding-top: 4rem;
+    }
+    
 
-
+    
 }

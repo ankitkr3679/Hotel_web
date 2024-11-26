@@ -489,6 +489,11 @@ p{
     background-color: var(--bg-color);
     padding: 3.125rem 0;
 }
+.tab-content img{
+    width: 80vh;
+    height: 70vh;
+
+}
 
 /* footer  */
 .footer_wrapper{

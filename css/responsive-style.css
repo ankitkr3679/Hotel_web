@@ -141,7 +141,7 @@
     .footer_wrapper > div{
         padding: 0 1.875rem;
     }
-    /* .team_wrapper .card {
+    .team_wrapper .card {
         margin-bottom: 1rem; 
     }
     .team_wrapper .team-info {
@@ -151,7 +151,7 @@
         width: 1.5rem; 
         height: 1.5rem;
         line-height: 1.5rem;
-    } */
+    }
 
 
 }

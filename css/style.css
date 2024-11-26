@@ -389,68 +389,17 @@ p{
 }
 
 /* team */
-.team_wrapper .card{
-    position: relative;
-    overflow: hidden;
-}
-.team_wrapper .team-info{
-    background-color: var(--secondary-color);
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    padding: 1.25rem;
-    margin-bottom: -4.6875rem;
-    transition: all 0.3s ease-in-out;
-}
-.team_wrapper .card:hover .team-info{
-    margin-bottom: 0;
-}
-.team_wrapper .team-info h5,
-.team_wrapper .team-info p{
-    color: var(--text-white);
-}
-.team_wrapper .team-info .social-network{
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    padding: 1.25rem;
-    margin: 1.25rem -1.25rem -1.25rem;
-    background-color: var(--Primary-color);
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.team_wrapper .team-info .social-network li a{
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
-    display: block;
-    border-radius: 50%;
-    font-size: .9375rem;
-    color: var(--text-white);
-    border: .0625rem solid var(--bg-white);
-}
-
-
-
-
-
-/* .team_wrapper .card {
+.team_wrapper .card {
     position: relative;
     overflow: hidden;
     border: none;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
-
-
 .team_wrapper .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     transform: translateY(-5px); 
 }
-
-
 .team_wrapper .team-info {
     background-color: var(--secondary-color);
     position: absolute;
@@ -461,20 +410,14 @@ p{
     margin-bottom: -4.6875rem; 
     transition: all 0.3s ease-in-out;
 }
-
-
 .team_wrapper .card:hover .team-info {
     margin-bottom: 0;
 }
-
-
 .team_wrapper .team-info h5,
 .team_wrapper .team-info p {
     color: var(--text-white);
     margin: 0;
 }
-
-
 .team_wrapper .team-info .social-network {
     display: flex;
     align-items: center;
@@ -486,8 +429,6 @@ p{
     transition: all 0.3s ease-in-out;
     gap: 10px; 
 }
-
-
 .team_wrapper .team-info .social-network li a {
     width: 2rem;
     height: 2rem;
@@ -500,13 +441,11 @@ p{
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
-
-
 .team_wrapper .team-info .social-network li a:hover {
     background-color: var(--bg-white); 
     color: var(--Primary-color); 
     transform: scale(1.1); 
-} */
+}
 
 
 /* gallery */
@@ -514,64 +453,6 @@ p{
     box-shadow: 0 0 .1875rem rgb(0,0,0,0.3);
     overflow: hidden;
     position: relative;
-}
-.gallery_wrapper .gallery-item:before,
-.gallery_wrapper .gallery-item:after,
-.gallery_wrapper .gallery-item-content:before,
-.gallery_wrapper .gallery-item-content:after{
-    content: '';
-    width: 50%;
-    height: 50%;
-    background: rgb(0,0,0,0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-}
-.gallery_wrapper .gallery-item:after{
-    top: 50%;
-}
-.gallery_wrapper .gallery-item:hover:after{
-    top: 0;
-    opacity: 1;
-}
-.gallery_wrapper .gallery-item:hover:before{
-    left: 50%;
-    opacity: 1;
-}
-.gallery_wrapper .gallery-item-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-.gallery_wrapper .gallery-item:hover .gallery-item-content{
-    opacity: 1;
-}
-.gallery_wrapper .gallery-item-content:before,
-.gallery_wrapper .gallery-item-content:after{
-    top: 0;
-    left: 50%;
-    z-index: -1;
-}
-.gallery_wrapper .gallery-item-content:before{
-    top: 50%;
-    opacity: 1;
-}
-.gallery_wrapper .gallery-item-content:after{
-    top: 50%;
-}
-.gallery_wrapper .gallery-item:hover .gallery-item-content:after{
-    opacity: 1;
-    left: 0;
 }
 
 /* price */
@@ -587,18 +468,18 @@ p{
 .price_wrapper .card:hover h3,
 .price_wrapper .card:hover h5,
 .price_wrapper .card:hover p{
-    color: var(--text-white);
+    color: var(--text-black);
 }
 .price_wrapper .card:hover .main-btn{
-    color: var(--text-white);
-    border-color: var(--text-white);
+    color: var(--text-black);
+    border-color: var(--text-black);
 }
 
 /* Blog */
 .blog_wrapper .blog-content{
     margin: -5rem 0 0 4.375rem;
     box-shadow: 0.125rem .25rem rgb(34 30 31 / 40%);
-    /* border-radius: 5px; */
+    border-radius: 5px;
 }
 .our-partner-slider{
     background-color: var(--bg-color);

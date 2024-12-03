@@ -568,6 +568,12 @@ p{
     color: var(--secondary-color);
 }
 
+input[type="date"].mobile{
+    &:before{
+      content: 'DD-MM-YYYY';
+    }
+}
+
 
 
 

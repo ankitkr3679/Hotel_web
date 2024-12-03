@@ -113,6 +113,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 jQuery('input[type="date"]').change(function() {
   if( isMobile) {
+    console.log("test");
     if (!jQuery(this).val()) {
       jQuery(this).addClass('mobile');
     }
